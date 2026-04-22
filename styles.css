@@ -38,18 +38,25 @@ body {
 
 .page-nav {
   display: flex;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.controls__link {
-  font-size: 1rem;
+.stylesheet-label {
+  font-size: 0.85rem;
   font-weight: 600;
   color: #1a3a5c;
-  text-decoration: none;
 }
 
-.controls__link:hover {
-  text-decoration: underline;
+.stylesheet-select {
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #1a3a5c;
+  border: 2px solid #1a3a5c;
+  border-radius: 6px;
+  padding: 0.3em 0.6em;
+  background: #fff;
+  cursor: pointer;
 }
 
 /* Default card styles */

@@ -1,0 +1,16 @@
+/* No container name pitfall */
+.cards-container {
+    --theme: dark;
+}
+
+.card {
+    --theme: light;
+}
+
+/* Style query isn't applied because direct parent doesn't meet condition */
+@container style(--theme: dark) {
+  .card__body {
+    background-color: #111;
+    color: #fff;
+  }
+}

@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cards Demo — CSS Custom Property</title>
+  <title>Cards Demo — CSS Style Queries</title>
   <link rel="stylesheet" href="styles.css">
+  <link id="variant-stylesheet" rel="stylesheet" href="">
 </head>
 <body>
   <header class="page-header">
     <h1 class="page-title">Card</h1>
-    <nav class="page-nav">
-      <a class="controls__link" href="index.html">Custom Property</a>
-      <a class="controls__link" href="property.html">CSS Property</a>
-      <a class="controls__link" href="declaration.html">CSS Declaration</a>
-      <a class="controls__link" href="container-name.html">Container Name</a>
-    </nav>
+    <div class="page-nav">
+      <label class="stylesheet-label" for="variant-toggle">Stylesheet</label>
+      <select class="stylesheet-select" id="variant-toggle">
+        <option value="">Custom Property</option>
+        <option value="property">CSS Property</option>
+        <option value="declaration">CSS Declaration</option>
+        <option value="container-name">Container Name</option>
+        <option value="no-container-name">Pitfall</option>
+      </select>
+    </div>
   </header>
   <ul class="cards-container">
     <li class="card-wrapper">
@@ -29,5 +34,19 @@
       </div>
     </li>
   </ul>
+  <script>
+    const variantSheet = document.getElementById('variant-stylesheet');
+    const toggle = document.getElementById('variant-toggle');
+
+    function setVariant(variant) {
+      variantSheet.href = variant ? `${variant}.css` : '';
+      toggle.value = variant;
+      localStorage.setItem('demo-variant', variant);
+    }
+
+    toggle.addEventListener('change', () => setVariant(toggle.value));
+
+    setVariant(localStorage.getItem('demo-variant') ?? '');
+  </script>
 </body>
 </html>
