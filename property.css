@@ -1,0 +1,11 @@
+/* CSS property style query — querying a CSS property */
+.cards-container {
+  background-color: #808080;
+}
+
+@container style(background-color) {
+  .card__body {
+    background-color: #111;
+    color: #fff;
+  }
+}

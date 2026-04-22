@@ -1,0 +1,17 @@
+/* Container name */
+.cards-container {
+    container-name: cardsContainer;
+    --theme: dark;
+}
+
+.card {
+    container-name: card;
+    --theme: light;
+}
+
+@container cardsContainer style(--theme: dark) {
+  .card__body {
+    background-color: #111;
+    color: #fff;
+  }
+}
