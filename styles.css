@@ -70,7 +70,6 @@ body {
 /* Card base styles */
 .card {
   width: 400px;
-  background: #fff;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -90,6 +89,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   color: #111;
+  background: #fff;
 }
 
 .card__tag {
