@@ -1,0 +1,49 @@
+.cards-container {
+    --theme: dark;
+    --size: large;
+    --simple: true;
+
+    container-type: inline-size; /* implictly a style query container as well */
+    background-color: #808080;
+}
+
+@container style(--theme: dark){
+  .card__body {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
+@container (width > 700px) {
+    .card {
+        flex-direction: row;
+        width: 700px;
+    }
+
+    .card__image {
+        width: 300px;
+    }
+
+    @container style(--theme: dark) {
+        .card__body {
+            background-color: #111;
+            color: #3a6ea5;
+        }
+    }
+}
+
+@container style(--simple: true) and style(--size: large){
+  .card__title {
+    font-size: 2rem;
+  }
+
+  .card__text {
+    display: none;
+  }
+}
+
+@container style(--simple: true) or style(--size: large){
+  .card__title {
+    font-style: italic;
+  }
+}

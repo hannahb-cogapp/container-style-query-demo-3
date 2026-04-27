@@ -17,6 +17,7 @@
         <option value="property">CSS Property</option>
         <option value="declaration">CSS Declaration</option>
         <option value="container-name">Container Name</option>
+        <option value="part-two">Part 2</option>
         <option value="no-container-name">Pitfall</option>
       </select>
     </div>
@@ -37,7 +38,7 @@
     const toggle = document.getElementById('variant-toggle');
 
     function setVariant(variant) {
-      variantSheet.href = variant ? `${variant}.css` : '';
+      variantSheet.href = variant ? `${variant}.css` : 'custom-property';
       toggle.value = variant;
       localStorage.setItem('demo-variant', variant);
     }
