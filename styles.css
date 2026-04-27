@@ -8,9 +8,14 @@
 }
 
 body {
+  --black: #111;
+  --white: #fff;
+  --blue: #3a6ea5;
+  --grey: #808080;
+
   font-family: system-ui, -apple-system, sans-serif;
   background: #f0f2f5;
-  color: #111;
+  color: var(--black);
   min-height: 100vh;
   padding: 2rem;
   
@@ -55,7 +60,7 @@ body {
   border: 2px solid #1a3a5c;
   border-radius: 6px;
   padding: 0.3em 0.6em;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
 }
 
@@ -87,8 +92,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: #111;
-  background: #fff;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .card__tag {
@@ -97,8 +102,8 @@ body {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
-  background: #3a6ea5;
+  color: var(--white);
+  background: var(--blue);
   border-radius: 4px;
   padding: 0.2em 0.5em;
   align-self: flex-start;

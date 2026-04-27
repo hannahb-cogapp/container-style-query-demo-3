@@ -2,12 +2,12 @@
 .cards-container {
   --theme: dark;
   
-  background-color: #808080;
+  background-color: var(--grey);
 }
 
 @container style(--theme: dark) {
   .card__body {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
   }
 }

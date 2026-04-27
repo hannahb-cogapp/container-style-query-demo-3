@@ -4,13 +4,13 @@
     --simple: true;
 
     container-type: inline-size; /* implictly a style query container as well */
-    background-color: #808080;
+    background-color: var(--grey);
 }
 
 @container style(--theme: dark){
   .card__body {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
   }
 }
 
@@ -26,7 +26,7 @@
 
     @container style(--theme: dark) {
         .card__body {
-            color: #3a6ea5;
+            color: var(--blue);
         }
     }
 }

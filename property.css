@@ -1,12 +1,12 @@
 /* Container Style Query — querying a CSS property */
 /* Not yet supported */
 .cards-container {
-  background-color: #808080;
+  background-color: var(--grey);
 }
 
 @container style(background-color) {
   .card__body {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
   }
 }
