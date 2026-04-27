@@ -1,6 +1,8 @@
 /* Container Style Query — querying a CSS custom property */
 .cards-container {
   --theme: dark;
+  
+  background-color: #808080;
 }
 
 @container style(--theme: dark) {

@@ -1,6 +1,8 @@
 /* No container name pitfall */
 .cards-container {
     --theme: dark;
+    
+    background-color: #808080;
 }
 
 .card {

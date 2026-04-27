@@ -1,7 +1,9 @@
 /* Container name */
 .cards-container {
+  --theme: dark;
+  
     container-name: cardsContainer;
-    --theme: dark;
+    background-color: #808080;
 }
 
 .card {
