@@ -119,15 +119,3 @@ body {
   font-size: 0.85rem;
   line-height: 1.6;
 }
-
-/* Container Style Query */
-.cards-container {
-  --theme: dark;
-}
-
-@container style(--theme: dark) {
-  .card__body {
-    background-color: #111;
-    color: #fff;
-  }
-}

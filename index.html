@@ -13,7 +13,7 @@
     <div class="page-nav">
       <label class="stylesheet-label" for="variant-toggle">Stylesheet</label>
       <select class="stylesheet-select" id="variant-toggle">
-        <option value="">Custom Property</option>
+        <option value="custom-property">Custom Property</option>
         <option value="property">CSS Property</option>
         <option value="declaration">CSS Declaration</option>
         <option value="container-name">Container Name</option>
@@ -44,7 +44,7 @@
 
     toggle.addEventListener('change', () => setVariant(toggle.value));
 
-    setVariant(localStorage.getItem('demo-variant') ?? '');
+    setVariant(localStorage.getItem('demo-variant') ?? 'custom-property');
   </script>
 </body>
 </html>

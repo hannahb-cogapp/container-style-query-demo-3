@@ -1,0 +1,11 @@
+/* Container Style Query — querying a CSS custom property */
+.cards-container {
+  --theme: dark;
+}
+
+@container style(--theme: dark) {
+  .card__body {
+    background-color: #111;
+    color: #fff;
+  }
+}
