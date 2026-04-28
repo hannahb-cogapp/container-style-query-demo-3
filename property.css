@@ -1,5 +1,7 @@
 /* Container Style Query — querying a CSS property */
+/* The style query will return false if the value of the property is the initial value for that property (if it has not been changed), and true otherwise */
 /* Not yet supported */
+
 .cards-container {
   background-color: var(--grey);
 }
