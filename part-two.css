@@ -41,7 +41,7 @@
   }
 }
 
-@container style(--simple: true) or style(--size: large){
+@container style(--simple: true) or style(--size: small){
   .card__title {
     font-style: italic;
   }
